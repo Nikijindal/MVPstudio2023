@@ -62,13 +62,7 @@ namespace MVPProject2023.StepDefinitions
             profilePageObj.createProfile1(driver);
         }
 
-        //[When(@"I complete shareskill form")]
-        //public void WhenICompleteShareskillForm()
-        //{
-        //    profilePageObj.shareskill(driver);
-        //}
-
-
+        
         [Then(@"The record should be created successfully")]
         public void ThenTheRecordShouldBeCreatedSuccessfully()
         {
@@ -77,24 +71,13 @@ namespace MVPProject2023.StepDefinitions
             Assert.That(newlanguage == "English", "Actual & expected language does not match");
             
         }
-        //[When(@"I update existing '([^']*)' on existing language record")]
-        //public void WhenIUpdateExistingOnExistingLanguageRecord(string language)
-        //{
-        //    profilePageObj.EditProfilelanguage(driver,language);
-        //}
+        
 
         [When(@"I update existing '([^']*)','([^']*)' on existing language record")]
         public void WhenIUpdateExistingOnExistingLanguageRecord(string language, string level)
         {
             profilePageObj.EditProfilelanguage(driver,language,level);
         }
-
-
-        //[Then(@"the record should have updated '([^']*)' successfully")]
-        //public void ThenTheRecordShouldHaveUpdatedSuccessfully(string language)
-        //{
-            
-        //}
 
         [Then(@"the record should have updated '([^']*)','([^']*)' successfully")]
         public void ThenTheRecordShouldHaveUpdatedSuccessfully(string language, string level)
@@ -120,18 +103,13 @@ namespace MVPProject2023.StepDefinitions
         {
             IWebElement dlepopup = driver.FindElement(By.CssSelector("[class=\"ns-box ns-growl ns-effect-jelly ns-type-success ns-show\"]"));
             Assert.That(dlepopup.Text == "FirstAid & FireWarden has been deleted from your certification", "certification is not deleted successfully");
-            //IWebElement deletedlanguage = driver.FindElement(By.XPath("//*[@id=\"account-profile-section\"]/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody/tr/td[1]"));
-            //Assert.That(deletedlanguage.Text != language, "language is not deleted successfully");
-
-            //string dl1skill = profilePageObj.Deletedskill(driver);
-            //string dl1skilllevel = profilePageObj.Deletedskilllevel(driver);
-
-            //Assert.That(dl1skill != "TestAnalyst", "Skill Record is not deleted successfully");
-            //Assert.That(dl1skilllevel != "Expert", "Level Record is not deleted sucessfully");
-
         }
 
-
+        [AfterScenario]
+        public void Teardown()
+        {
+            driver.Quit();  
+        }
 
     }
 }
