@@ -17,8 +17,8 @@ namespace MVPProject2023.Utilities
         public void LoginSteps()
         {
             driver = new ChromeDriver();
-            LoginPage LoginPageObj = new LoginPage();
-            LoginPageObj.LoginActions(driver);
+            //LoginPage LoginPageObj = new LoginPage();
+            //LoginPageObj.LoginActions(driver);
         }
 
         [TearDown]

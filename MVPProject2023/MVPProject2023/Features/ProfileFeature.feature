@@ -10,14 +10,14 @@ Scenario: Register on Mars QA website with valid details
 	When I enter all fields on registration page 
 	Then The user should be registered successfully
 
-	Scenario Outline: Create profile record with valid details
+	Scenario Outline:01) Create profile record with valid details
 	Given I logged into Mars QA portal successfully with valid credentials
 	When I navigate to profile page
 	And I create language,skills,education and certification record
 	And select availability,hours and earn target
 	Then The record should be created successfully
 
-	Scenario Outline: Edit existing profile record with valid details
+	Scenario Outline:02) Edit existing profile record with valid details
 	Given I logged into Mars QA portal successfully with valid credentials
 	When I navigate to profile page
 	And I update existing '<language>','<level>' on existing language record
@@ -29,7 +29,7 @@ Scenario: Register on Mars QA website with valid details
 	| French   | Basic            |
 	| Spanish  | Conversational   |
 
-	Scenario Outline: Delete exisiting profile record with valid credentials
+	Scenario Outline:03) Delete exisiting profile record with valid credentials
 	Given I logged into Mars QA portal successfully with valid credentials
 	When I navigate to profile page
 	And I delete existing record on existing language record page

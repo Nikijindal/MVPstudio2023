@@ -108,12 +108,12 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create profile record with valid details")]
-        public void CreateProfileRecordWithValidDetails()
+        [NUnit.Framework.DescriptionAttribute("01) Create profile record with valid details")]
+        public void _01CreateProfileRecordWithValidDetails()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create profile record with valid details", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01) Create profile record with valid details", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 13
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -144,17 +144,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit existing profile record with valid details")]
+        [NUnit.Framework.DescriptionAttribute("02) Edit existing profile record with valid details")]
         [NUnit.Framework.TestCaseAttribute("Hindi", "Native/Bilingual", null)]
         [NUnit.Framework.TestCaseAttribute("French", "Basic", null)]
         [NUnit.Framework.TestCaseAttribute("Spanish", "Conversational", null)]
-        public void EditExistingProfileRecordWithValidDetails(string language, string level, string[] exampleTags)
+        public void _02EditExistingProfileRecordWithValidDetails(string language, string level, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("language", language);
             argumentsOfScenario.Add("level", level);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit existing profile record with valid details", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02) Edit existing profile record with valid details", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 20
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -182,12 +182,12 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete exisiting profile record with valid credentials")]
-        public void DeleteExisitingProfileRecordWithValidCredentials()
+        [NUnit.Framework.DescriptionAttribute("03) Delete exisiting profile record with valid credentials")]
+        public void _03DeleteExisitingProfileRecordWithValidCredentials()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete exisiting profile record with valid credentials", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03) Delete exisiting profile record with valid credentials", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 32
  this.ScenarioInitialize(scenarioInfo);
 #line hidden

@@ -84,7 +84,7 @@ namespace MVPProject2023.StepDefinitions
         {
             string e1language = profilePageObj.editedlanguage(driver);
             string e1level = profilePageObj.editedlevel(driver);
-
+            //Thread.Sleep(6000);
             Assert.That(e1language == language, "Actual and edited language does not match");
             Assert.That(e1level == level,"Actual and edited level does not match");
         }
